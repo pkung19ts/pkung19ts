@@ -1,0 +1,254 @@
+.content-BusinessDetails {
+    display: flex;
+    margin-left: 60px;
+    margin-top: -25px;
+    padding: 40px;
+}
+/* botton-back*/
+.botton-back button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    border: 1px solid #134BBA;
+    width: 100px;
+    padding: 10px;
+    padding-right: 20px;
+    background-color: #134B8a;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 100px;
+}
+/* tap-botton*/
+.tab-buttons {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+
+}
+
+button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+    color: #134B8a;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.active {
+    background-color: #134B8a;
+    color: white;
+}
+
+button:hover {
+    background-color: #0e3a7b;
+    color: white;
+}
+
+button.inactive {
+    background-color: white;
+    color: #134B8a;
+}
+
+.content-box {
+    display: flex;
+    background-color: #c4d3e9;
+    margin-left: 100px;
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.content-box1 {
+    width: 900px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.content-box-imges {
+    height: 500px;
+}
+
+.box-one-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.content-box-name {
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+    padding: 25px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #134BBA;
+}
+
+.content-box-address {
+    display: flex;
+    padding: 25px;
+}
+
+.adress {
+    font-weight: bold;
+}
+
+.address-detail {
+    margin-left: 60px;
+}
+
+.time-detail {
+    margin-left: 20px;
+}
+
+.time-detail p {
+    margin-bottom: 10px;
+}
+
+.time {
+    font-weight: bold;
+}
+
+.content-box-time {
+    display: flex;
+    padding: 25px;
+}
+
+.content-box2 {
+    width: 700px;
+    border-radius: 20px;
+    margin-left: 20px;
+    background-color: white;
+    padding: 30px;
+}
+
+.content-box-right-imges {
+    margin-top: 20px;
+}
+
+.box-two-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+}
+
+.content-box-right-imges img:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: -4px;
+}
+
+.content-box-right-imges img:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -4px;
+}
+
+@media (max-width: 376px) {
+    .container-BusinessDetails {
+        background-color: #e0e0e0;
+    }
+
+    .content-box,
+    .content-box2 {
+        display: none;
+    }
+
+    .content-box.active {
+        display: block;
+    }
+
+    .content-box2.active {
+        display: block;
+    }
+
+    .content-box {
+        display: flex;
+        background-color: transparent;
+        width: calc(100% - 20px);
+        padding: 10px;
+        border-radius: 20px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .content-box2 {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 20px);
+        border-radius: 20px;
+        background-color: white;
+        margin-left: 10px;
+    }
+
+    .box-two-image {
+        height: 250px;
+    }
+
+    .botton-back button {
+        display: flex;
+        margin-left: 10px;
+        margin-top: 10px;
+        border: 1px solid #134BBA;
+        width: 100px;
+        padding: 10px;
+        background-color: #134B8a;
+        border-radius: 20px;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .box-one-image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .content-box-imges {
+        position: relative;
+    }
+
+    .content-box-name {
+        margin-top: -200px;
+        left: 0;
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .content-box-address,
+    .content-box-time {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .address-detail,
+    .time-detail {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .time-detail p {
+        margin-bottom: 10px;
+    }
+}
